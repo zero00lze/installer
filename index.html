@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Download de Aplicativos</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f5f9ff;
+      color: #1a1a1a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 420px;
+      background: #fff;
+      border-radius: 20px;
+      padding: 30px 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .icon {
+      width: 80px;
+      height: 80px;
+      background: #4a6cf7;
+      border-radius: 25px;
+      margin: 0 auto 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .icon::before {
+      content: "📱";
+      font-size: 40px;
+    }
+
+    h1 {
+      font-size: 1.2rem;
+      margin-bottom: 12px;
+      color: #222;
+    }
+
+    p {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 16px;
+      margin: 10px 0;
+      border-radius: 12px;
+      font-size: 1rem;
+      font-weight: bold;
+      color: #fff;
+      text-decoration: none;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .btn-blue {
+      background: #1e90ff;
+    }
+
+    .btn-purple {
+      background: linear-gradient(90deg, #6a11cb, #2575fc);
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      opacity: 0.9;
+    }
+
+    .info {
+      margin-top: 20px;
+      font-size: 0.85rem;
+      color: #333;
+    }
+
+    .info span {
+      display: block;
+      margin: 6px 0;
+    }
+
+    .check {
+      color: green;
+    }
+
+    .android {
+      color: #4444ff;
+    }
+
+    /* Responsividade extra */
+    @media (max-width: 480px) {
+      .container {
+        padding: 25px 15px;
+      }
+      h1 {
+        font-size: 1.1rem;
+      }
+      p {
+        font-size: 0.9rem;
+      }
+      .btn {
+        font-size: 0.95rem;
+        padding: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="icon"></div>
+    <h1>Para continuar, baixe os aplicativos necessários abaixo.</h1>
+    <p>Instale os dois aplicativos para ter acesso completo aos recursos</p>
+
+    <a href="#" class="btn btn-blue">📱 Baixar App 1</a>
+    <a href="#" class="btn btn-purple">📱 Baixar App 2</a>
+
+    <div class="info">
+      <span class="check">✔ Downloads seguros e verificados</span>
+      <span class="android">📱 Compatível com Android 5.0+</span>
+    </div>
+  </div>
+</body>
+</html>
